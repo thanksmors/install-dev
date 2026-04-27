@@ -1,6 +1,18 @@
-# dev-env-script
+# install-dev
 
 One-command installer for development tools on macOS and Windows.
+
+## Quick Install
+
+**macOS:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/thanksmors/install-dev/main/install-dev-env-macos.sh | bash
+```
+
+**Windows (PowerShell as Administrator):**
+```powershell
+irm https://raw.githubusercontent.com/thanksmors/install-dev/main/install-dev-env-windows.ps1 | iex
+```
 
 ## What it installs
 
@@ -12,22 +24,11 @@ One-command installer for development tools on macOS and Windows.
 | Gemini CLI | npm | npm |
 | cc-mirror | npx | npx |
 
-## macOS
+## Requirements
 
-```bash
-./install-dev-env-macos.sh
-```
+**macOS:** macOS, internet connection
 
-Requires: macOS, internet connection
-
-## Windows
-
-```powershell
-# Open PowerShell as Administrator
-.\install-dev-env-windows.ps1
-```
-
-Requires: Windows 10/11, internet connection, Winget (included in Windows 11, or install App Installer from Microsoft Store for Windows 10)
+**Windows:** Windows 10/11, internet connection, Winget (included in Windows 11, or install App Installer from Microsoft Store for Windows 10)
 
 ## What happens
 
