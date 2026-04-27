@@ -4,15 +4,36 @@ One-command installer for development tools on macOS and Windows.
 
 ## Quick Install
 
-**macOS:**
+### macOS
+
+**1. Open Terminal**
+
+**2. Paste and run:**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/thanksmors/install-dev/main/install-dev-env-macos.sh | bash
 ```
 
-**Windows (PowerShell as Administrator):**
+**3. Enter your password when asked** (required for Homebrew)
+
+**Notes:**
+- First-time Homebrew users: may prompt to install Xcode CLI tools
+- Gatekeeper may ask you to allow the download
+
+### Windows
+
+**1. Search for PowerShell → Right-click → "Run as administrator"**
+
+**2. Paste and run:**
 ```powershell
 irm https://raw.githubusercontent.com/thanksmors/install-dev/main/install-dev-env-windows.ps1 | iex
 ```
+
+**3. Confirm when asked** (type `Y` or `A`)
+
+**Notes:**
+- Requires administrator privileges
+- If script execution is blocked, run: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` first
+- Winget may prompt for license agreement during install
 
 ## What it installs
 
@@ -40,7 +61,7 @@ irm https://raw.githubusercontent.com/thanksmors/install-dev/main/install-dev-en
 
 ## After install
 
-1. Restart your terminal
+1. **Restart your terminal**
 2. Set your Minimax API key as environment variable
 3. Run cc-mirror quick start command
 
